@@ -1,0 +1,74 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+body {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.container {
+    width: 400px;
+    height: 400px;
+    box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    background: #5CA4EA;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+}
+
+input{
+    padding: 15px;
+    border: none;
+    outline: none;
+    box-shadow: 4px 8px 16px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Roboto';
+    width: 280px;
+    color: #5CA4EA;
+    font-weight: bold;
+    padding-right: 40px;
+}
+
+.autocomplete {
+    position: absolute;
+    min-height: 130px;
+    max-height: 160px;
+    width: 280px;
+    top: 50px;
+    background-color: white;
+    display: grid;
+    overflow-y: scroll;
+
+}
+
+.autocomplete a {
+    padding: 10px;
+}
+
+.autocomplete a:hover {
+    cursor: pointer;
+    color: rgb(63, 168, 225);
+}
+
+.pesquisar {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    position: relative;
+}
+
+.pesquisar label {
+    position: absolute;
+    left: 250px;
+    filter: grayscale(1);
+}
+
+.autocomplete a strong {
+    color: black;
+    font-weight: 500;
+}
